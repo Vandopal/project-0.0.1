@@ -21,11 +21,6 @@ let alertInterval = 5 * tickRate;  // Alert every 5 seconds
 function gameLoop() {
     tick++;
 
-    // Выводим номер текущего тика в консоль
-    console.log("Tick: " + tick);
-
-    // ... ваш код обновления игры здесь ...
-
     gameLoopId = requestAnimationFrame(gameLoop);
 }
 
@@ -465,8 +460,6 @@ function main() {
   }
 
   function update() {
-    console.log(saws.length)
-    console.log(saws)
     updateStats();
     if (playStatus === true) {
       playGameButton.setAttribute("disabled", true);
